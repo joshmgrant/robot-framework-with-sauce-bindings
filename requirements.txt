@@ -1,0 +1,4 @@
+selenium
+simplesauce
+robotframework
+robotframework-pabot
