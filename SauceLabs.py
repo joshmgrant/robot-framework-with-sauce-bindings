@@ -1,10 +1,10 @@
 from simplesauce.session import SauceSession
 
 
-BASE_TEST_URL = 'https://www.self.saucedemo.com'
+BASE_TEST_URL = 'https://www.saucedemo.com'
 
 
-class SauceActions(object):
+class SauceLabs(object):
 
     def __init__(self):
         self.sauce = {}
@@ -15,6 +15,9 @@ class SauceActions(object):
 
     def go_to_demo(self):
         self.sauce.driver.get(BASE_TEST_URL)
+    
+    def title_is_correct(self):
+        assert "Swag" in self.sauce.driver.title
 
     def stop_session(self):
         self.sauce.stop(True)
