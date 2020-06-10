@@ -2,13 +2,13 @@
 
 # Background
 
-Hello. If you're reading this, you are interested in using Robot Framework with Sauce Labs! In particular, you're interested in using the [Sauce Bindings](https://saucebindings.github.io/) with Robot.
+Hello. If you're reading this, you are interested in using Robot Framework with Sauce Labs! In particular, you're interested in using the [Sauce Bindings](https://saucelabs.github.io/sauce_bindings/docs/overview.html) with Robot.
 
 Here I have a simplistic proof-of-concept of how this might work.
 
 *Idea*: Write keyword libraries in pure Python for Robot using the Python Sauce Bindings.
 
-There are two files to look at: `SauceLabs.py` and `open_page.robot`. The first is a rough Python-based Robot library that makes use of the Sauce Bindings to perform simple actions. The second is a Robot test case using the keywords defined in `SauceLabs.py`.
+There are two important files to look at: `SauceLabs.py` and `open_page.robot`. The first is a rough Python-based Robot library that makes use of the Sauce Bindings to perform simple actions. The second is a Robot test case using the keywords defined in `SauceLabs.py`.
 
 There are currently other files for trying to construct page objects and write Robot test cases with them. These are current a Work-in-Process.
 
