@@ -1,4 +1,4 @@
-from simplesauce.session import SauceSession
+from saucebindings.session import SauceSession
 
 
 BASE_TEST_URL = 'https://www.saucedemo.com'
@@ -11,7 +11,7 @@ class SauceLabs(object):
 
     def start_session(self):
         self.sauce = SauceSession()
-        self.sauce.start()
+        return self.sauce.start()
 
     def go_to_demo(self):
         self.sauce.driver.get(BASE_TEST_URL)

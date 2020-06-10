@@ -3,7 +3,7 @@ from selenium import webdriver
 
 class LoginPage(object):
 
-    def __init__(self, driver):
+    def create(self, driver):
         self.driver = driver
 
     def login_as(self, username, password):
